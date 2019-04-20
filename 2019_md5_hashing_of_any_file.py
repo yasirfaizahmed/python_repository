@@ -1,0 +1,10 @@
+import hashlib
+path = input()
+file = open(path)
+#sdf = file.strip()
+#encoded = file.encode('utf-8')
+#print(encoded)
+hashed = hashlib.md5(file)
+print(hashed)
+lol = hashed.hexdigest()
+print(lol)
