@@ -1,0 +1,76 @@
+----matplotlib---
+  plt.scatter(x, y, color="red")
+  plt.xlabel("")
+  plt.tittle("")
+  plt.xlim(min, max)
+
+
+----pandas----
+
+#####features#####
+
+  var = pd.DataFrame(
+      [],[],[],[],[]....,[],
+      index = [0,1,2,3,4,..],
+      columns = ['','','','','',...,'']) #creates the dataframe
+
+    OR
+  var = pd.Dataframe(
+	'clmn1_name':[ur data],
+	'clmn2_name':[ur data])
+	OR
+  data = {'clmn1_name':[ur data],
+	'clmn2_name':[ur data]}
+  df = pd.DataFrame(data)
+
+
+/**********
+/*some junk,{'jan':[58,42,74,22,2.95],
+    'feb':[61,45,78,26,3.02],
+    'mar':[65,48,84,25,2.34],
+    'apr':[67,50,92,28,1.02],
+    'may':[71,53,98,35,0.48],
+    'jun':[75,56,107,41,0.11],
+    'jul':[77,58,105,44,0.0],
+    'aug':[77,59,102,43,0.03],
+    'sep':[77,57,103,40,0.17],
+    'oct':[73,54,96,34,0.81],
+    'nov':[64,48,84,30,1.7],
+    'dec':[64,48,84,30,1.7]}*/
+**********/
+
+  df = pd.read_csv('filename')#file should be inside project main directory
+
+  df.head(n)#returns the first n data rows
+  df.tail(n)#returns the last n data rows
+
+  df.dtypes, df.index, df.columns, df.values
+
+  df.describe() #returns the count, mean, sd, etc
+
+  df.sort_values('the respective coulmn name',assending=True)#returns the data in assending order of respective column
+
+ ####slicing#####
+
+  df.columnname #returns only the specified column
+  df[n:m] #slices from n to m-1 rows 
+  df[['column0','column1','column2'...]#slices the given column names
+  df.loc[n:m,['column0','column1']] #returns the ntom-1 rows with column0,column1 
+  df.iloc[n:m,[j,k]] #does the same this as above but with index numbers as its attributes
+
+#######filtering#########
+
+  df[df.column_name > value] #returns all the rows which satisfies the given condidtion
+  
+
+#########assigning##########
+
+  df.loc[9,['column']] = value # assign the given address content to the assigned value, value can also be np.nan 
+  df.loc[address] = np.array([5]*len(df) 
+  
+#####renaming######
+  df.rename(columns = ('old_name':'new_name'), inplace=True) #renames specifies column
+  df.columns = ['new1','new2','new3'...] #rename the whole columns
+
+#######dumping to csv file########
+df.to_csv('file name') 
