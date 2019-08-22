@@ -31,7 +31,7 @@ plt.show()
 best_m()    #calling the function
 
 m_arr_test = []
-m_test = 0.1
+m_test = 0
 while(m_test <= 50):
     m_arr_test.append(m_test)
     m_test += 0.01
