@@ -1,3 +1,8 @@
+#reference links
+#http://polynomialregression.drque.net/math.html
+#https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/#:~:text=The%20general%20polynomial%20regression%20model%20can%20be%20developed%20using%20the,expected%20values%20from%20the%20dataset.
+#https://dhirajkumarblog.medium.com/linear-regression-without-sklearn-from-scratch-5c83b46642f8
+
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
@@ -45,10 +50,11 @@ for q in range(13):
     plt.plot(range(-2,20), predict)
     plt.scatter(x, y, color='red', marker='+')
 
+    plt.text(5, 460, "Degree = ")
     plt.xlabel("X")
     plt.ylabel("Y")
     plt.title(q)
-    plt.pause(0.5)
+    plt.pause(1.0)
     plt.clf()
 
 plt.show()
