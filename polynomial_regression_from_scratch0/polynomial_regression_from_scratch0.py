@@ -51,8 +51,8 @@ for q in range(13):
     plt.scatter(x, y, color='red', marker='+')
 
     plt.text(5, 460, "Degree = ")
-    plt.xlabel("X")
-    plt.ylabel("Y")
+    plt.xlabel("X_independent var.")
+    plt.ylabel("Y_dependent var.")
     plt.title(q)
     plt.pause(1.0)
     plt.clf()
