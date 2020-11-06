@@ -3,6 +3,9 @@
 #https://neutrium.net/mathematics/least-squares-fitting-of-a-polynomial/#:~:text=The%20general%20polynomial%20regression%20model%20can%20be%20developed%20using%20the,expected%20values%20from%20the%20dataset.
 #https://dhirajkumarblog.medium.com/linear-regression-without-sklearn-from-scratch-5c83b46642f8
 
+
+########################          USING CRAMERS RULE #############
+
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
