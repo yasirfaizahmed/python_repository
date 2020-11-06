@@ -62,20 +62,7 @@ print("R squared value = ", R_squared(df['area'], df['price'], mean_price, m, c)
 plt.show()
 
 
-'''
-df = pd.read_csv("linear0.csv")
-x = df['x'].to_numpy()
-y = df['y'].to_numpy()
 
-mean_x = sum(x)/len(x)
-mean_y = sum(y)/len(y)
 
-m = covariace(x, y, mean_x, mean_y) / variance(mean_x, x)
-c = mean_y - m * mean_x
 
-print("m = ", m)
-print("c = ", c)
 
-print("R squared = ", R_squared(x, y, mean_y, m, c))
-
-'''
