@@ -1,3 +1,8 @@
+#Refence links
+#https://dhirajkumarblog.medium.com/linear-regression-without-sklearn-from-scratch-5c83b46642f8
+
+############     USING LEAST SQUARE FIT ##############
+
 from matplotlib import pyplot as plt
 import pandas as pd
 from sklearn import linear_model
