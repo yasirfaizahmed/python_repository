@@ -73,6 +73,5 @@ lin2.fit(x_poly, y)
 plt.subplot(122)
 plt.plot(x, lin2.predict(poly.fit_transform(x)), color = 'red')
 
-print(y)
 
 plt.show()
