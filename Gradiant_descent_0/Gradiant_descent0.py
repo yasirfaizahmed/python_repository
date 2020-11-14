@@ -26,10 +26,10 @@ for i in range(epoch):
     D_c = (-2 / n) * sum(y - Y_pred)
     m = m - lr * D_m
     c = c - lr * D_c
-    plt.subplot(121)
     plt.clf()
     plt.scatter(x, y, color='red', marker='+')
     plt.plot([x.min(), x.max()], [m * x.min() + c, m * x.max() + c])
+    plt.pause(0.1)
 
 
 plt.show()
